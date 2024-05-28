@@ -14,6 +14,8 @@ import { functions, handleFunctionCalls } from '../ai/functions'; // Functions t
 import { BotMessage } from '@/components/llm-stocks'; // BotMessage component for displaying messages
 import { AI } from '../action'; // AI action definitions
 
+export const maxDuration = 60; // Maximum duration for OpenAI completion in seconds
+
 // OpenAIService class definition
 export class OpenAIService {
   private openai: OpenAI; // Instance of OpenAI SDK
